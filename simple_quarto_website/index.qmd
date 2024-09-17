@@ -1,0 +1,96 @@
+---
+title: "Bayes' Theorem"
+author: "Siru Wu"
+bibliography: reference.bib
+---
+
+**Bayes' theorem** (alternatively **Bayes' law** or **Bayes' rule**, after Thomas Bayes) gives a mathematical rule for inverting conditional probabilities, allowing us to find the probability of a cause given its effect. For example, if the risk of developing health problems is known to increase with age, Bayes' theorem allows the risk to an individual of a known age to be assessed more accurately by conditioning it relative to their age, rather than assuming that the individual is typical of the population as a whole. 
+
+Based on Bayes law both the prevalence of a disease in a given population and the error rate of an infectious disease test have to be taken into account to evaluate the meaning of a positive test result correctly and avoid the base-rate fallacy. [@koch1990bayes]
+
+
+![ ](images/Bayes_icon.png){width=300px}
+
+## History
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Bayes' theorem is named after the Reverend Thomas Bayes (/beɪz/), also a statistician and philosopher. 
+
+Bayes used conditional probability to provide an algorithm that uses evidence to calculate limits on an unknown parameter. His work was published in 1763 as An Essay Towards Solving a Problem in the Doctrine of Chances. 
+
+Bayes studied how to compute a distribution for the probability parameter of a binomial distribution (in modern terminology).  
+:::
+
+::: {.column width="50%"}
+Independently of Bayes, Pierre-Simon Laplace in 1774, and later in his 1812 Théorie analytique des probabilités, used conditional probability to formulate the relation of an updated posterior probability from a prior probability, given evidence. 
+
+He reproduced and extended Bayes's results in 1774, apparently unaware of Bayes's work. The Bayesian interpretation of probability was developed mainly by Laplace. [@swinburne2004bayes]
+:::
+
+::::
+
+About 200 years later, *Sir Harold Jeffreys*[^1] put Bayes's algorithm and Laplace's formulation on an axiomatic basis, writing in a 1973 book that 
+
+> "Bayes' theorem is to the theory of probability what the Pythagorean theorem is to geometry." 
+
+## Statement of Theorem
+Bayes' theorem is stated mathematically as the following equation:
+
+$$
+P(A|B) = \frac{P(B|A) P(A)}{P(B)}
+$$
+where $𝐴$ and $𝐵$ are events and $P(B) \not = 0$.
+
+- $P(A|B)$ is a *conditional probability*[^2]: the probability of event $A$ occurring given that $B$ is true. It is also called the *posterior probability*[^3] of $A$ given $B$.
+- $P(B|A)$ is also a conditional probability: the probability of event $B$ occurring given that $A$ is true. It can also be interpreted as the *likelihood*[^4] of $A$ given a fixed $B$ because $P(B|A) = L(A|B)$.
+- $P(A)$ and $P(B)$ are the probabilities of observing $A$ and $B$ respectively without any given conditions; they are known as the *prior probability*[^5] and *marginal probability*[^6].
+
+![ ](images/Bayes_theorem_visual_proof.png){width=300px}
+
+### Being General
+|      | B     | notB  |               |   |
+|------|-------|-------|---------------|---|
+| A    | s     | t     | s + t         |   |
+| notA | u     | v     | u + v         |   |
+|      | s + u | t + v | s + t + u + v |   |
+
+
+::: {#video}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cqTwHnNbc8g" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+:::
+
+
+```mermaid
+graph TD;
+    A[Root] --> B[Child 1];
+    A --> C[Child 2];
+    B --> D[Grandchild 1];
+    B --> E[Grandchild 2];
+    C --> F[Grandchild 3];
+    C --> G[Grandchild 4];
+
+```mermaid
+graph TB
+
+A((A))
+B((B))
+C((C))
+D((D))
+E((E))
+
+A–>B
+A–>C
+B–>D
+B–>E
+
+
+[^1]: **Sir Harold Jeffreys** (22 April 1891 – 18 March 1989) was a British geophysicist who made significant contributions to mathematics and statistics. His book, Theory of Probability, which was first published in 1939, played an important role in the revival of the objective Bayesian view of probability.
+[^2]: **Conditional probability** is a measure of the probability of an event occurring, given that another event (by assumption, presumption, assertion or evidence) is already known to have occurred.
+[^3]: **Posterior probability** is a type of conditional probability that results from updating the prior probability with information summarized by the likelihood via an application of Bayes' rule.
+[^4]: **Likelihood function** (often simply called the likelihood) measures how well a statistical model explains observed data by calculating the probability of seeing that data under different parameter values of the model.
+[^5]: **Prior probability** distribution of an uncertain quantity, often simply called the prior, is its assumed probability distribution before some evidence is taken into account.
+[^6]: **Marginal distribution** of a subset of a collection of random variables is the probability distribution of the variables contained in the subset.

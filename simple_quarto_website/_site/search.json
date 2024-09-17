@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "slides/slides.html#section",
+    "href": "slides/slides.html#section",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "Bayes’ theorem (alternatively Bayes’ law or Bayes’ rule, after Thomas Bayes) gives a mathematical rule for inverting conditional probabilities, allowing us to find the probability of a cause given its effect."
+  },
+  {
+    "objectID": "slides/slides.html#section-1",
+    "href": "slides/slides.html#section-1",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "History\nBayes’ theorem is named after the Reverend Thomas Bayes, also a statistician and philosopher. Bayes used conditional probability to provide an algorithm that uses evidence to calculate limits on an unknown parameter. Bayes studied how to compute a distribution for the probability parameter of a binomial distribution (in modern terminology). (Swinburne 2004) About 200 years later, Sir Harold Jeffreys1 put Bayes’s algorithm and Laplace’s formulation on an axiomatic basis, writing in a 1973 book that:\n\n“Bayes’ theorem is to the theory of probability what the Pythagorean theorem is to geometry.”"
+  },
+  {
+    "objectID": "slides/slides.html#statement-of-theorem",
+    "href": "slides/slides.html#statement-of-theorem",
+    "title": "Bayes’ Theorem",
+    "section": "Statement of Theorem",
+    "text": "Statement of Theorem\nBayes’ theorem is stated mathematically as the following equation:\n\\[\nP(A|B) = \\frac{P(B|A) P(A)}{P(B)}\n\\] where \\(𝐴\\) and \\(𝐵\\) are events and \\(P(B) \\not = 0\\)."
+  },
+  {
+    "objectID": "slides/slides.html#section-2",
+    "href": "slides/slides.html#section-2",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "\\(P(A|B)\\) is a conditional probability: the probability of event \\(A\\) occurring given that \\(B\\) is true. It is also called the posterior probability of \\(A\\) given \\(B\\).\n\\(P(B|A)\\) is also a conditional probability: the probability of event \\(B\\) occurring given that \\(A\\) is true. It can also be interpreted as the likelihood of \\(A\\) given a fixed \\(B\\) because \\(P(B|A) = L(A|B)\\).\n\\(P(A)\\) and \\(P(B)\\) are the probabilities of observing \\(A\\) and \\(B\\) respectively without any given conditions; they are known as the prior probability and marginal probability."
+  },
+  {
+    "objectID": "slides/slides.html#section-4",
+    "href": "slides/slides.html#section-4",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "import matplotlib.pyplot as plt\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxpoints = np.array([1, 8])\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints)\nplt.show()"
+  },
+  {
+    "objectID": "slides/slides.html#reference",
+    "href": "slides/slides.html#reference",
+    "title": "Bayes’ Theorem",
+    "section": "Reference",
+    "text": "Reference\n\n\n\n\n\n\n\n\nSwinburne, Richard. 2004. “Bayes’ Theorem.” Revue Philosophique de La France Et de l 194 (2)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "Bayes’ theorem (alternatively Bayes’ law or Bayes’ rule, after Thomas Bayes) gives a mathematical rule for inverting conditional probabilities, allowing us to find the probability of a cause given its effect. For example, if the risk of developing health problems is known to increase with age, Bayes’ theorem allows the risk to an individual of a known age to be assessed more accurately by conditioning it relative to their age, rather than assuming that the individual is typical of the population as a whole.\nBased on Bayes law both the prevalence of a disease in a given population and the error rate of an infectious disease test have to be taken into account to evaluate the meaning of a positive test result correctly and avoid the base-rate fallacy. (Koch and Koch 1990)"
+  },
+  {
+    "objectID": "index.html#history",
+    "href": "index.html#history",
+    "title": "Bayes’ Theorem",
+    "section": "History",
+    "text": "History\n\n\nBayes’ theorem is named after the Reverend Thomas Bayes (/beɪz/), also a statistician and philosopher.\nBayes used conditional probability to provide an algorithm that uses evidence to calculate limits on an unknown parameter. His work was published in 1763 as An Essay Towards Solving a Problem in the Doctrine of Chances.\nBayes studied how to compute a distribution for the probability parameter of a binomial distribution (in modern terminology).\n\nIndependently of Bayes, Pierre-Simon Laplace in 1774, and later in his 1812 Théorie analytique des probabilités, used conditional probability to formulate the relation of an updated posterior probability from a prior probability, given evidence.\nHe reproduced and extended Bayes’s results in 1774, apparently unaware of Bayes’s work. The Bayesian interpretation of probability was developed mainly by Laplace. (Swinburne 2004)\n\n\nAbout 200 years later, Sir Harold Jeffreys1 put Bayes’s algorithm and Laplace’s formulation on an axiomatic basis, writing in a 1973 book that\n\n“Bayes’ theorem is to the theory of probability what the Pythagorean theorem is to geometry.”"
+  },
+  {
+    "objectID": "index.html#statement-of-theorem",
+    "href": "index.html#statement-of-theorem",
+    "title": "Bayes’ Theorem",
+    "section": "Statement of Theorem",
+    "text": "Statement of Theorem\nBayes’ theorem is stated mathematically as the following equation:\n\\[\nP(A|B) = \\frac{P(B|A) P(A)}{P(B)}\n\\] where \\(𝐴\\) and \\(𝐵\\) are events and \\(P(B) \\not = 0\\).\n\n\\(P(A|B)\\) is a conditional probability2: the probability of event \\(A\\) occurring given that \\(B\\) is true. It is also called the posterior probability3 of \\(A\\) given \\(B\\).\n\\(P(B|A)\\) is also a conditional probability: the probability of event \\(B\\) occurring given that \\(A\\) is true. It can also be interpreted as the likelihood4 of \\(A\\) given a fixed \\(B\\) because \\(P(B|A) = L(A|B)\\).\n\\(P(A)\\) and \\(P(B)\\) are the probabilities of observing \\(A\\) and \\(B\\) respectively without any given conditions; they are known as the prior probability5 and marginal probability6.\n\n\n\nBeing General\n\n\n\n\nB\nnotB\n\n\n\n\n\n\nA\ns\nt\ns + t\n\n\n\nnotA\nu\nv\nu + v\n\n\n\n\ns + u\nt + v\ns + t + u + v\n\n\n\n\n\n\n\n\n```mermaid graph TD; A[Root] –&gt; B[Child 1]; A –&gt; C[Child 2]; B –&gt; D[Grandchild 1]; B –&gt; E[Grandchild 2]; C –&gt; F[Grandchild 3]; C –&gt; G[Grandchild 4];\n```mermaid graph TB\nA((A)) B((B)) C((C)) D((D)) E((E))\nA–&gt;B A–&gt;C B–&gt;D B–&gt;E"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Bayes’ Theorem",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSir Harold Jeffreys (22 April 1891 – 18 March 1989) was a British geophysicist who made significant contributions to mathematics and statistics. His book, Theory of Probability, which was first published in 1939, played an important role in the revival of the objective Bayesian view of probability.↩︎\nConditional probability is a measure of the probability of an event occurring, given that another event (by assumption, presumption, assertion or evidence) is already known to have occurred.↩︎\nPosterior probability is a type of conditional probability that results from updating the prior probability with information summarized by the likelihood via an application of Bayes’ rule.↩︎\nLikelihood function (often simply called the likelihood) measures how well a statistical model explains observed data by calculating the probability of seeing that data under different parameter values of the model.↩︎\nPrior probability distribution of an uncertain quantity, often simply called the prior, is its assumed probability distribution before some evidence is taken into account.↩︎\nMarginal distribution of a subset of a collection of random variables is the probability distribution of the variables contained in the subset.↩︎"
+  }
+]
