@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -106,8 +140,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lorem-ipsum-odor-amet-consectetuer-adipiscing-elit." id="toc-lorem-ipsum-odor-amet-consectetuer-adipiscing-elit." class="nav-link active" data-scroll-target="#lorem-ipsum-odor-amet-consectetuer-adipiscing-elit.">Lorem ipsum odor amet, consectetuer adipiscing elit.</a>
+  <ul class="collapse">
+  <li><a href="#phasellus-vulputate-ad-ligula-torquent-volutpat-vitae." id="toc-phasellus-vulputate-ad-ligula-torquent-volutpat-vitae." class="nav-link" data-scroll-target="#phasellus-vulputate-ad-ligula-torquent-volutpat-vitae.">Phasellus vulputate ad ligula torquent volutpat vitae.</a>
+  <ul class="collapse">
+  <li><a href="#volutpat-sociosqu-vitae-ad-dui-justo-lacinia." id="toc-volutpat-sociosqu-vitae-ad-dui-justo-lacinia." class="nav-link" data-scroll-target="#volutpat-sociosqu-vitae-ad-dui-justo-lacinia.">Volutpat sociosqu vitae ad dui justo lacinia.</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -132,8 +178,36 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>About this site</p>
+<section id="lorem-ipsum-odor-amet-consectetuer-adipiscing-elit." class="level1">
+<h1>Lorem ipsum odor amet, consectetuer adipiscing elit.</h1>
+<p>Montes ipsum habitant dictum; nostra dictum lobortis. Habitasse curabitur dapibus cras leo mi aptent. Vulputate ipsum non, aliquam feugiat duis blandit ultricies tempus. Laoreet nisl nascetur bibendum elit lobortis risus. Augue commodo justo suscipit; varius erat turpis sed fusce. Vulputate enim taciti nullam, suscipit luctus hac magnis senectus. Mollis feugiat purus amet torquent fermentum risus lorem venenatis morbi. Pretium platea tellus iaculis primis magnis; aenean interdum mauris enim.</p>
+<section id="phasellus-vulputate-ad-ligula-torquent-volutpat-vitae." class="level2">
+<h2 class="anchored" data-anchor-id="phasellus-vulputate-ad-ligula-torquent-volutpat-vitae.">Phasellus vulputate ad ligula torquent volutpat vitae.</h2>
+<p>Torquent massa eu magna magna ornare convallis semper erat sollicitudin. Elit ridiculus ligula mi nam vivamus orci. Mattis pulvinar suspendisse risus quam facilisi congue condimentum montes. Nullam ipsum convallis ex taciti consectetur vel posuere. Diam aliquam neque arcu luctus gravida consequat ridiculus risus. Torquent ultrices lectus mus cras iaculis volutpat potenti in.</p>
+<section id="volutpat-sociosqu-vitae-ad-dui-justo-lacinia." class="level3">
+<h3 class="anchored" data-anchor-id="volutpat-sociosqu-vitae-ad-dui-justo-lacinia.">Volutpat sociosqu vitae ad dui justo lacinia.</h3>
+<div id="97446382" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>xpoints <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">8</span>])</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>ypoints <span class="op">=</span> np.array([<span class="dv">3</span>, <span class="dv">10</span>])</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>plt.plot(xpoints, ypoints)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="about_files/figure-html/cell-2-output-1.png" width="566" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

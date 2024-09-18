@@ -3,3 +3,23 @@ title: "About"
 ---
 
 About this site
+
+
+# Lorem ipsum odor amet, consectetuer adipiscing elit. 
+Montes ipsum habitant dictum; nostra dictum lobortis. Habitasse curabitur dapibus cras leo mi aptent. Vulputate ipsum non, aliquam feugiat duis blandit ultricies tempus. Laoreet nisl nascetur bibendum elit lobortis risus. Augue commodo justo suscipit; varius erat turpis sed fusce. Vulputate enim taciti nullam, suscipit luctus hac magnis senectus. Mollis feugiat purus amet torquent fermentum risus lorem venenatis morbi. Pretium platea tellus iaculis primis magnis; aenean interdum mauris enim.
+
+## Phasellus vulputate ad ligula torquent volutpat vitae. 
+Torquent massa eu magna magna ornare convallis semper erat sollicitudin. Elit ridiculus ligula mi nam vivamus orci. Mattis pulvinar suspendisse risus quam facilisi congue condimentum montes. Nullam ipsum convallis ex taciti consectetur vel posuere. Diam aliquam neque arcu luctus gravida consequat ridiculus risus. Torquent ultrices lectus mus cras iaculis volutpat potenti in. 
+
+### Volutpat sociosqu vitae ad dui justo lacinia.
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+```

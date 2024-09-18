@@ -28,11 +28,11 @@
     "text": "\\(P(A|B)\\) is a conditional probability: the probability of event \\(A\\) occurring given that \\(B\\) is true. It is also called the posterior probability of \\(A\\) given \\(B\\).\n\\(P(B|A)\\) is also a conditional probability: the probability of event \\(B\\) occurring given that \\(A\\) is true. It can also be interpreted as the likelihood of \\(A\\) given a fixed \\(B\\) because \\(P(B|A) = L(A|B)\\).\n\\(P(A)\\) and \\(P(B)\\) are the probabilities of observing \\(A\\) and \\(B\\) respectively without any given conditions; they are known as the prior probability and marginal probability."
   },
   {
-    "objectID": "slides/slides.html#section-4",
-    "href": "slides/slides.html#section-4",
+    "objectID": "slides/slides.html#h",
+    "href": "slides/slides.html#h",
     "title": "Bayes’ Theorem",
-    "section": "",
-    "text": "import matplotlib.pyplot as plt\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxpoints = np.array([1, 8])\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints)\nplt.show()"
+    "section": "h",
+    "text": "h\n\n\nCode\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [1, 4, 9, 16, 25]\n\nplt.plot(x, y)\nplt.show()"
   },
   {
     "objectID": "slides/slides.html#reference",
@@ -47,6 +47,13 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "about.html#phasellus-vulputate-ad-ligula-torquent-volutpat-vitae.",
+    "href": "about.html#phasellus-vulputate-ad-ligula-torquent-volutpat-vitae.",
+    "title": "About",
+    "section": "Phasellus vulputate ad ligula torquent volutpat vitae.",
+    "text": "Phasellus vulputate ad ligula torquent volutpat vitae.\nTorquent massa eu magna magna ornare convallis semper erat sollicitudin. Elit ridiculus ligula mi nam vivamus orci. Mattis pulvinar suspendisse risus quam facilisi congue condimentum montes. Nullam ipsum convallis ex taciti consectetur vel posuere. Diam aliquam neque arcu luctus gravida consequat ridiculus risus. Torquent ultrices lectus mus cras iaculis volutpat potenti in.\n\nVolutpat sociosqu vitae ad dui justo lacinia.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nxpoints = np.array([1, 8])\nypoints = np.array([3, 10])\n\nplt.plot(xpoints, ypoints)\nplt.show()"
   },
   {
     "objectID": "index.html",
@@ -67,7 +74,7 @@
     "href": "index.html#statement-of-theorem",
     "title": "Bayes’ Theorem",
     "section": "Statement of Theorem",
-    "text": "Statement of Theorem\nBayes’ theorem is stated mathematically as the following equation:\n\\[\nP(A|B) = \\frac{P(B|A) P(A)}{P(B)}\n\\] where \\(𝐴\\) and \\(𝐵\\) are events and \\(P(B) \\not = 0\\).\n\n\\(P(A|B)\\) is a conditional probability2: the probability of event \\(A\\) occurring given that \\(B\\) is true. It is also called the posterior probability3 of \\(A\\) given \\(B\\).\n\\(P(B|A)\\) is also a conditional probability: the probability of event \\(B\\) occurring given that \\(A\\) is true. It can also be interpreted as the likelihood4 of \\(A\\) given a fixed \\(B\\) because \\(P(B|A) = L(A|B)\\).\n\\(P(A)\\) and \\(P(B)\\) are the probabilities of observing \\(A\\) and \\(B\\) respectively without any given conditions; they are known as the prior probability5 and marginal probability6.\n\n\n\nBeing General\n\n\n\n\nB\nnotB\n\n\n\n\n\n\nA\ns\nt\ns + t\n\n\n\nnotA\nu\nv\nu + v\n\n\n\n\ns + u\nt + v\ns + t + u + v\n\n\n\n\n\n\n\n\n```mermaid graph TD; A[Root] –&gt; B[Child 1]; A –&gt; C[Child 2]; B –&gt; D[Grandchild 1]; B –&gt; E[Grandchild 2]; C –&gt; F[Grandchild 3]; C –&gt; G[Grandchild 4];\n```mermaid graph TB\nA((A)) B((B)) C((C)) D((D)) E((E))\nA–&gt;B A–&gt;C B–&gt;D B–&gt;E"
+    "text": "Statement of Theorem\nBayes’ theorem is stated mathematically as the following equation:\n\\[\nP(A|B) = \\frac{P(B|A) P(A)}{P(B)}\n\\] where \\(𝐴\\) and \\(𝐵\\) are events and \\(P(B) \\not = 0\\).\n\n\\(P(A|B)\\) is a conditional probability2: the probability of event \\(A\\) occurring given that \\(B\\) is true. It is also called the posterior probability3 of \\(A\\) given \\(B\\).\n\\(P(B|A)\\) is also a conditional probability: the probability of event \\(B\\) occurring given that \\(A\\) is true. It can also be interpreted as the likelihood4 of \\(A\\) given a fixed \\(B\\) because \\(P(B|A) = L(A|B)\\).\n\\(P(A)\\) and \\(P(B)\\) are the probabilities of observing \\(A\\) and \\(B\\) respectively without any given conditions; they are known as the prior probability5 and marginal probability6.\n\n\n\nBeing General\n\n\n\n\nB\nnotB\n\n\n\n\n\n\nA\ns\nt\ns + t\n\n\n\nnotA\nu\nv\nu + v\n\n\n\n\ns + u\nt + v\ns + t + u + v\n\n\n\n\n\n\n\n\n\n\n\n\n\n    graph TD \n    A[Christmas] --&gt;|Get money|B(Go shopping) \n    B --&gt; C{Let me think} \n    C --&gt;|One| D[Laptop] \n    C --&gt;|Two| E[iPhone] \n    C --&gt;|Three| F[fa:fa-car Car]"
   },
   {
     "objectID": "index.html#footnotes",
@@ -75,5 +82,12 @@
     "title": "Bayes’ Theorem",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nSir Harold Jeffreys (22 April 1891 – 18 March 1989) was a British geophysicist who made significant contributions to mathematics and statistics. His book, Theory of Probability, which was first published in 1939, played an important role in the revival of the objective Bayesian view of probability.↩︎\nConditional probability is a measure of the probability of an event occurring, given that another event (by assumption, presumption, assertion or evidence) is already known to have occurred.↩︎\nPosterior probability is a type of conditional probability that results from updating the prior probability with information summarized by the likelihood via an application of Bayes’ rule.↩︎\nLikelihood function (often simply called the likelihood) measures how well a statistical model explains observed data by calculating the probability of seeing that data under different parameter values of the model.↩︎\nPrior probability distribution of an uncertain quantity, often simply called the prior, is its assumed probability distribution before some evidence is taken into account.↩︎\nMarginal distribution of a subset of a collection of random variables is the probability distribution of the variables contained in the subset.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#section-4",
+    "href": "slides/slides.html#section-4",
+    "title": "Bayes’ Theorem",
+    "section": "",
+    "text": "Code\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4, 5]\ny = [1, 4, 9, 16, 25]\n\nplt.plot(x, y)\nplt.show()"
   }
 ]

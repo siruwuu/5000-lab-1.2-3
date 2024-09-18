@@ -87,6 +87,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -269,10 +272,23 @@ P(A|B) = \frac{P(B|A) P(A)}{P(B)}
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cqTwHnNbc8g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 </div>
-<p>```mermaid graph TD; A[Root] –&gt; B[Child 1]; A –&gt; C[Child 2]; B –&gt; D[Grandchild 1]; B –&gt; E[Grandchild 2]; C –&gt; F[Grandchild 3]; C –&gt; G[Grandchild 4];</p>
-<p>```mermaid graph TB</p>
-<p>A((A)) B((B)) C((C)) D((D)) E((E))</p>
-<p>A–&gt;B A–&gt;C B–&gt;D B–&gt;E</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">    graph TD 
+    A[Christmas] --&gt;|Get money|B(Go shopping) 
+    B --&gt; C{Let me think} 
+    C --&gt;|One| D[Laptop] 
+    C --&gt;|Two| E[iPhone] 
+    C --&gt;|Three| F[fa:fa-car Car]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 

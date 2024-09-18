@@ -63,30 +63,14 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 allowfullscreen></iframe>
 :::
 
-
-```mermaid
-graph TD;
-    A[Root] --> B[Child 1];
-    A --> C[Child 2];
-    B --> D[Grandchild 1];
-    B --> E[Grandchild 2];
-    C --> F[Grandchild 3];
-    C --> G[Grandchild 4];
-
-```mermaid
-graph TB
-
-A((A))
-B((B))
-C((C))
-D((D))
-E((E))
-
-A–>B
-A–>C
-B–>D
-B–>E
-
+```{mermaid}
+    graph TD 
+    A[Christmas] -->|Get money|B(Go shopping) 
+    B --> C{Let me think} 
+    C -->|One| D[Laptop] 
+    C -->|Two| E[iPhone] 
+    C -->|Three| F[fa:fa-car Car]
+```
 
 [^1]: **Sir Harold Jeffreys** (22 April 1891 – 18 March 1989) was a British geophysicist who made significant contributions to mathematics and statistics. His book, Theory of Probability, which was first published in 1939, played an important role in the revival of the objective Bayesian view of probability.
 [^2]: **Conditional probability** is a measure of the probability of an event occurring, given that another event (by assumption, presumption, assertion or evidence) is already known to have occurred.
